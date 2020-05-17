@@ -88,7 +88,7 @@
         pdfauthor={((( nb.metadata.authors | join(', ', attribute='name') )))},%
         ((* endif *))%
         pdflang={ru-RU},
-        pdftitle={Лабораторная работа ((* if 'lab_number' in nb.metadata *))№((( nb.metadata.lab_number )))((* endif *)) по дисциплине «Методы машинного обучения»},
+        pdftitle={Лабораторная работа ((* if 'lab_number' in nb.metadata *))№((( nb.metadata.lab_number )))((* endif *)) по дисциплине «Технологии машинного обучения»},
         pdfsubject={((( nb_title | escape_latex )))},
     }
 
