@@ -88,7 +88,7 @@
         pdfauthor={((( nb.metadata.authors | join(', ', attribute='name') )))},%
         ((* endif *))%
         pdflang={ru-RU},
-        pdftitle={Лабораторная работа ((* if 'lab_number' in nb.metadata *))№((( nb.metadata.lab_number )))((* endif *)) по дисциплине «Технологии машинного обучения»},
+        pdftitle={Рубежный контроль ((* if 'lab_number' in nb.metadata *))№((( nb.metadata.lab_number )))((* endif *)) по дисциплине «Технологии машинного обучения»},
         pdfsubject={((( nb_title | escape_latex )))},
     }
 
@@ -120,7 +120,7 @@
     \vfill\vfill
 
     \begin{center}
-    \Large Лабораторная работа ((* if 'lab_number' in nb.metadata *))№((( nb.metadata.lab_number )))((* endif *))\\
+    \Large Рубежный контроль ((* if 'lab_number' in nb.metadata *))№((( nb.metadata.lab_number )))((* endif *))\\
     по~дисциплине\\{\LARGE<<Технологии машинного обучения>>}\\
     на~тему\\{\LARGE<<((( nb_title | escape_latex )))>>}
     \end{center}
